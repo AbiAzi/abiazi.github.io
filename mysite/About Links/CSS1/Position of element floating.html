@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position of Element</title>
+<style>
+    div {
+        background-color: rgb(237, 100, 180);
+
+    }
+    p {
+        width: 300px;
+        height: 50px;
+        border: 1px solid black;
+        margin-right: 10px;
+        overflow-y: scroll;
+        padding: 10px;
+    }
+    #p1 {
+background-color: blue;
+float: right;
+    }
+    #p2{
+background-color: blueviolet;
+clear: right;
+    }
+    #p3 {
+background-color: brown;
+height: 50px;
+float:right
+    }
+    #p4 {
+background-color: chartreuse;
+clear: right;
+    }
+section {
+    clear: left;
+}
+</style>
+</head>
+<body>
+    <h1>The Element Floating Section </h1>
+    <div>
+        <p id="p1">If the specified installation path does not exist, there will be a reminding to 
+            create the relevant path. The installation path should be simple and easy to 
+            maintain. Do not use Chinese characters, spaces and special symbols restricted 
+            by the operating system. </p>
+        <p id="p2">If the product installation path is incorrect or there is 
+            insufficient disk space, the installation will fail. Select the installation location and 
+            click [Start Installation]</p>
+        <p id="p3">The installation of NC Cloud is now complete. If the above screen does not 
+            appear, please check if there are any abnormalities in the installation process</p>
+        <p id="p4">Deploy → WAS Information → Modify, change the Profile path to Cluster Host 
+            dmgr profile path and check the Cluster option, click the Save button. Restart 
+            sysConfig, go to the Deployment tab, and update to WAS</p>
+        <section>This is the regular contenet continuing after the paragraph box</section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance in CSS</title>
+<style>
+    body {
+        color: rgb(76, 0, 139);
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p {
+        color: rgb(0, 255, 42);
+    }
+    p,ul {
+        color: rgb(245, 11, 11);
+    }
+    h1.size {
+        font-size: x-large;
+        text-align: center;
+        color: rgb(5, 250, 5) 
+    }
+    header.the-leader p {
+        color: rgb(140, 0, 255);
+    }
+    p.what {
+        color: maroon;
+    }
+    p.what {
+        /*look the power of word !important*/
+        color: black !important;
+    }
+</style>
+</head>
+<body>
+    <h1 class="size">There is Inheritance( Cascade of CSS Example)</h1>
+    <h2>Subheading 1</h2>
+    <p>In CSS inheritance controls what happens when no value is specified for 
+        a property on an element.CSS properties can be categorized in two types:
+    inherited properties, which by default are set to the computed value of 
+    the parent element.</p>
+    <h2 style="color: darkgreen;">Subheading 2</h2>
+    <p>What is next!!!I do not have damn clue!!!For reference, here is the entire list of inheritable properties, 
+        taken from the W3 reference of all CSS properties:
+        <ul>
+            <li>azimuth</li>
+            <li>border-collapse.</li>
+            <li>border-spacing.</li>
+            <li>caption-side.</li>
+            <li>color.</li>
+            <li>cursor.</li>
+            <li>empty-cells.</li>
+        </ul>
+        </p>
+    <header class="the-leader">
+        <p class="what">
+            If the configuration file is set to enter a password, you need to enter the correct password 
+            to enter; within 10 minutes after the password is entered, there is no need to enter the 
+            password again. After more than 10 minutes, you must enter the password again to set up. 
+            The following functions related to password control all comply with this principle.
+        </p>
+    </header>
+</body>
+</html>

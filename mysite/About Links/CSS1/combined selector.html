@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Combined Selectors</title>
+<style>
+  /* class selector */
+.highlight {
+  color:white;
+  background-color: darkgrey;
+}
+/* all p with class="highlight" */
+p.highlight{
+  color: red;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 40px;
+}
+/* all elements with class "highlight" as well as "mainpoint". */
+.highlight.mainpoint{
+  color: pink;
+  background-color: black;
+}
+section > article, section > h2{
+  color: blueviolet;
+  font-style: inherit;
+}
+
+</style>
+</head>
+<h1 class="highlight">Element with class selector</h1>
+<p>In the making of fuel efficient vehicle gross weight of the vehicle is biggest enemy for 
+automotive vehicle designers. The engineer’s to way to reduce gross weight of the vehicle is 
+opting a modern engineering material with better material properties such as fiber reinforced 
+polymer composites. When there is need for weight reduction along with better material 
+properties composites are better potential candidates. There are numerous automotive parts 
+which can be with composite.</p>
+<p class="highlight"> This is P with Class ="Highlight"</p>
+<div class="mainpoint highlight ">This is the main point of the Article</div>
+<body>
+<section>
+  <h2>Subheading 1</h2>
+  <div>
+  <article>Article inside in DIV, which is inside section</article>
+  </div>
+</section>
+<section>
+  <article class=highlight> "Article as a direct child of Section element"</article>
+</section>
+<style>
+  section li{
+    color: red;
+    line-height: 23px;
+  }
+  article li,article > h3 {
+    color: deepskyblue;
+    font-weight: 1000;
+  }
+</style>
+<section>
+  Table of Contents:
+  <ul>
+    <li>Article 1</li>
+    <li>Article 2</li>
+    <li>Article 3</li>
+    <li>Article 4</li>
+  </ul>
+</section>
+<article>
+  <h3>Shoping List</h3>
+  <ul>
+    <li>Mango</li>
+    <li>Aocado</li>
+    <li>Papaya</li>
+    <li>coconat</li>
+  </ul>
+</article>
+</body>
+</html>

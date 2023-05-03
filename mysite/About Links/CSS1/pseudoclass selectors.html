@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pseudoclass Selectors</title>
+	<style>
+		/* styles go here */
+		header li {
+			list-style: none;
+		}
+		a:link, a:visited {
+			text-decoration: none;
+			background-color: rgb(19, 233, 19);
+			border: 2px solid;
+			color: rgb(211, 0, 123);
+			display:block;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 1px; 
+
+		}
+
+		a:hover, a:active{
+			background-color: aqua;
+			color: blue;
+		}
+		header li:nth-child(6) {
+			text-shadow: 0cqmax;
+			font-size: larger;
+			color: darkblue;
+
+		}
+		section li:nth-child(odd){
+			color: chartreuse;
+			background-color: darkorange;
+		}
+		section li:nth-child(5){
+			color: blue;
+			cursor: pointer;
+			background-color: blueviolet;
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<section>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li> Adobe</li>
+			<li>Solidworks</li>
+			<li>ANSYS</li>
+			<LI>AUTOCAD</LI>
+		    <li><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers">Coursera 
+				Webdevelopment</a></li>
+			<li>ABAQUS</li>
+			<li>Adobe</li>
+			<li>Illustrator</li>
+
+		</ul>
+		</section>
+	</header>
+</body>
+</html>
