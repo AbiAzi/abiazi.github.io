@@ -1,6 +1,7 @@
 h1 {
 margin-bottom: 15px; 
 text-align: center; 
+font-size: 75% larger;
 }
 
 * {
@@ -31,6 +32,7 @@ margin-right: 2px;
 margin-top: 5px;
 clear: both;
 font-weight: bold;
+font-size: 25% larger;
 }
 #two {
 border:2px solid black;
@@ -46,6 +48,7 @@ margin-right: 2px;
 margin-top: 5px;
 clear: both;
 font-weight: bold;
+font-size: 25% larger;
 }
 #three {
 border:2px solid black;
@@ -61,6 +64,7 @@ margin-right: 2px;
 margin-top: 5px;
 clear: both;
 font-weight: bold;
+font-size: 25% larger;
 }
 
 /***Simple_Responsive_Framework.***/
