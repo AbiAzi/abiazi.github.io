@@ -1,0 +1,32 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0px;
+}
+#logo-img {
+    background: url("restaurant.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    scale: 75%;
+}
+.folat-left .d-none .d-sm-block .d-md-block {
+    border-right: 0px;
+    float: left;
+}
+.navbar-brand {
+    font-family: 'Lora', serif;
+    border-left: 0px;
+    padding-top: 10px;
+    text-shadow: #fc3d03;
+}s
+.navbar-brand p {
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: medium;
+}
