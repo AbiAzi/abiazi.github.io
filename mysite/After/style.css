@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     color: #fff;
-    background-color: #61122f;
+    background-color: #61122f !important;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #header-nav {
@@ -9,24 +9,223 @@ body {
     border-radius: 0;
     border: 0px;
 }
+nav{
+    width: 100vw;
+}
 #logo-img {
     background: url("restaurant.png") no-repeat;
     width: 150px;
     height: 150px;
-    scale: 75%;
-}
-.folat-left .d-none .d-sm-block .d-md-block {
-    border-right: 0px;
-    float: left;
+    scale: 50%;
 }
 .navbar-brand {
     font-family: 'Lora', serif;
     border-left: 0px;
     padding-top: 10px;
     text-shadow: #fc3d03;
-}s
+    border: 1000px 200px 400px 200px;
+}
+@media  screen and (max-width: 700px) {
+    #logo-img {
+      display: none;
+    }
+    .jumbotron {
+        border:200px 200px 200px 200px ;
+        vertical-align: middle;
+    }
+    .navbar-brand > p > span {
+        display: flex;
+    }
+  }
+@media (min-width:336px) and (max-width:576px) {
+    .col-xs-6 {
+        width: 50% !important;
+    }  
+}
 .navbar-brand p {
     text-transform: uppercase;
     vertical-align: middle;
-    font-size: medium;
+    font-size:75%;
+}
+#navbarSupportedContent {
+ float:right;
+}
+.navbar-expand-lg {
+    flex-wrap: unset;
+    justify-content: unset;
+    border:#fc3d03;
+}
+.navbar {
+    box-sizing: unset;
+}
+#phone-No {
+    text-align: center;
+    font-family: 'lora',serif;
+}
+.nav-item svg {
+    text-align: center;
+    margin-left: 16px;
+}
+.navbar-brand h1 {
+    font-size:2vw;
+}
+.container {
+   background-color: #fff; 
+}
+.jumbotron {
+    border-right: 10px;
+}
+#xs-deliver {
+    background-color: #f6b319;
+}
+/* FOOTER */
+.panel-footer .container {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #e08383;
+    border-top: 0;
+  }
+  .panel-footer div.row {
+    margin-bottom: 35px;
+  }
+  #hours, #address {
+    line-height: 2;
+  }
+  #hours > span, #address > span {
+    font-size: 1.3em;
+  }
+  #address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+  }
+  #testimonials {
+    font-style: italic;
+  }
+  #testimonials p:nth-child(2) {
+    margin-top: 25px;
+  }
+  /* END FOOTER */
+  
+  /* MENU CATEGORIES PAGE */
+.categorie-title { 
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+  }
+  .categorie-title span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #4bfa06;
+    opacity: .8;
+  }
+  .categorie-title:hover {
+    box-shadow: 0 1px 5px 1px #0227fa;
+  }
+  #menu-categorie-title + div {
+    margin-bottom: 50px;
+  }
+  /* END MENU CATEGORIES PAGE */
+
+  /* Single Categories */
+  .row .menu-item-tile {
+    background-color: #0227fa;
+  }
+  .menu-item-tile {
+    margin-bottom: 25px;
+  }
+  .menu-item-tile hr {
+    width: 80%;
+  }
+  .menu-item-tile .menu-item-price {
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: -5px;
+    margin-right: -15px;
+    color: chartreuse;
+  }
+  .menu-item-tile .menu-item-price span {
+    font-size: .6em;
+    color: #f6b319;
+  }
+  .menu-item-photo {
+    position: relative;
+    border: 2px solid#3F0C1F;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+  }
+  .menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+  }
+  .menu-item-description {
+    padding-right: 30px;
+    text-align: center;
+    color: #fff;
+    text-align: justify;
+  }
+  h3.menu-item-tile {
+    margin: 0 0 10px;
+  }
+  .menu-item-details {
+    font-size: .9em;
+    font-style: italic;
+  }
+  /* End of Single Caterories*/
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #0501f1cc;
+}
+#menu-tile {
+    background: url('menu.jpg') no-repeat;
+    background-position: center;
+}
+#specials-tile {
+    background: url('Special.PNG') no-repeat;
+    background-position: center;
+}
+#map-tile {
+    background: url('map.PNG') no-repeat;
+    background-position: center;
+}
+.menu-item-photo {
+  margin: auto ;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
 }
